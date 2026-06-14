@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EvoHunt</title>
+    <meta
+      name="description"
+      content="EvoHunt project page for transferable self-evolving playbooks for agentic security auditing."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="EvoHunt home">EvoHunt</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#overview">Overview</a>
+        <a href="#results">Results</a>
+        <a href="#artifacts">Artifacts</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/evohunt-overview.png" alt="">
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Agentic security auditing</p>
+          <h1 id="hero-title">EvoHunt</h1>
+          <p class="subtitle">
+            Transferable self-evolving playbooks for agentic vulnerability discovery and validation.
+          </p>
+          <div class="hero-actions" aria-label="Project links">
+            <a class="button primary" href="https://github.com/evohunt-project/artifacts">Artifacts</a>
+            <a class="button secondary" href="https://github.com/evohunt-project">GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Paper</p>
+          <h2>Transferable Self-Evolving Playbooks for Agentic Security Auditing</h2>
+        </div>
+        <div class="two-column">
+          <p>
+            EvoHunt studies whether security-audit procedure can be learned outside the model and harness.
+            Starting from an empty playbook, an audit agent runs on source-available advisory cases, an
+            evaluator scores evidence against ground truth, and a reviser commits playbook updates backed by
+            failure analysis.
+          </p>
+          <p>
+            The learned playbook is a versioned, inspectable artifact containing workflows, validation gates,
+            vulnerability-class strategies, false-positive controls, and reproduction requirements. The paper
+            evaluates both acquisition and transfer to weaker student agents.
+          </p>
+        </div>
+        <figure class="figure">
+          <img src="assets/evohunt-overview.png" alt="EvoHunt evolution and transfer overview">
+          <figcaption>
+            A teacher agent evolves an audit playbook on source audit cases; the resulting procedure transfers
+            to student agents without changing model weights or harness.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="results" class="section band">
+        <div class="section-heading">
+          <p class="eyebrow">Highlights</p>
+          <h2>What the paper reports</h2>
+        </div>
+        <div class="metrics" aria-label="Result highlights">
+          <div class="metric">
+            <span class="metric-value">813 + 371</span>
+            <span class="metric-label">training and held-out advisories</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">6x</span>
+            <span class="metric-label">Codex/GPT5.4-xhigh T1 exploit lift</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">11.3%</span>
+            <span class="metric-label">GLM5.1 evolved target-match rate</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">27</span>
+            <span class="metric-label">confirmed vulnerability disclosures</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="artifacts" class="section artifacts">
+        <div class="section-heading">
+          <p class="eyebrow">Release</p>
+          <h2>Artifacts</h2>
+        </div>
+        <div class="release-panel">
+          <p>
+            The public artifact package is being organized. It will collect the materials needed to inspect
+            the benchmark, scoring records, playbooks, and released traces at an appropriate disclosure level.
+          </p>
+          <a class="button primary" href="https://github.com/evohunt-project/artifacts">
+            View artifact repository
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>EvoHunt Project</span>
+      <a href="https://github.com/evohunt-project/evohunt-project.github.io">Website source</a>
+    </footer>
+  </body>
+</html>
